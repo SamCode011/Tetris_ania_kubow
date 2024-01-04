@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //assign functions to keycodes
   function control(e) {
-    if (e.keyCode === 39)
-      moveright()
-    else if (e.keyCode === 38)
-      rotate()
-    else if (e.keyCode === 37)
-      moveleft()
-    else if (e.keyCode === 40)
-      moveDown()
-  }
+if (e.key === "ArrowRight"){
+  moveright();
+}else if (e.key === "ArrowUp"){
+rotate();
+}else if (e.key === "ArrowLeft"){
+moveleft();
+}else if (e.key === "ArrowDown"){
+moveDown();
+}}
 
   // the classical behavior is to speed up the block if down button is kept pressed so doing that
   document.addEventListener('keydown', control)
